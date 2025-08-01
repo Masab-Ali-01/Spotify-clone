@@ -3,7 +3,7 @@ let timeUpdater;
 console.log(currentSong);
 console.log(currentSong.duration);
 async function getSongs() {
-    let a = await fetch('E:\01_Masab\programming\html, css, javascript\projects from tutorial\Spotify clone/songs/');
+    let a = await fetch('http://127.0.0.1:3000/Spotify%c20clone/songs/');
     let response = await a.text();
     let div = document.createElement('div');
     div.innerHTML = response;
