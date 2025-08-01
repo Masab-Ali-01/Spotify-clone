@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- utility classes -->
+    <link rel="stylesheet" href="utility.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="container bg-black flex">
+        <div class="left gap-10px flex flex-col">
+            <div class="home p-10px flex flex-col bg-grey rounded">
+                <div class="logo flex justify-sb">
+                    <img src="icons/logo.png" alt="logo">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="flex flex-col">
+                    <li><i class=" icon fa-solid fa-house" alt="home"></i>
+                        <p>Home</p>
+                    </li>
+                    <li><i class=" icon fa fa-search" alt="home"></i>
+                        <p>search</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- song library -->
+            <div class="library p-10px flex flex-col bg-grey rounded  flex flex-col gap-10px">
+                <div class="heading flex gap-10px align-center p-10px">
+                    <i class="fa-solid fa-music"></i>
+                    <h4>Your Library</h4>
+                </div>
+                <div class="songList p-10px">
+                    <ul>
+                        <!-- <li>
+                            <img src="https://i.scdn.co/image/ab67616d00001e024a61adae73edffa174bd0006" alt="">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Artist Name</div>
+                            </div>
+                            <div class="playNow">
+                                <span style="font-size: 0.8rem;">Play Now</span>
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="footer p-10px flex flex-col gap-10px">
+                    <div class="links">
+                        <ul class="flex gap-10px">
+                            <li><a href="">Legal</a></li>
+                            <li><a href="">Saftey & Privacy Center</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                            <li><a href="">About Ads</a></li>
+                            <li><a href="">Accessbility</a></li>
+                        </ul>
+                    </div>
+                    <div class="language">
+                        <button class="rounded flex align-center gap-10px"><i class="fas fa-globe"></i> English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right-section -->
+        <div class="right rounded p-10px bg-grey">
+            <!-- header -->
+            <div class="header flex justify-sb align-center">
+                <!-- navigation -->
+                <div class="nav flex gap-10px">
+                    <i class="fa-solid fa-bars toggle" ></i>
+                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <!-- Buttons -->
+                <div class="buttons flex gap-10px">
+                    <button class="signup color-black">Sign up</button>
+                    <button class="login color-black rounded">Login</button>
+                </div>
+            </div>
+            <!-- playlists -->
+            <div class="spotifyPlaylists p-10px">
+                <h2>Spotify Playlist</h2>
+                <div class="card-contatiner">
+                    <div class="card rounded">
+                        <div class="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                        <img loading="lazy" src="https://i.scdn.co/image/ab67616d00001e024a61adae73edffa174bd0006">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                        <img loading="lazy" src="https://i.scdn.co/image/ab67616d00001e024a61adae73edffa174bd0006">
+                        <h4>Happy Hits!</h4>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                </div>
+            </div>
+            <!-- play bar -->
+                <div class="playBar">
+                    <div class="soundBar">
+                        <div class="soundCircle"></div>
+                    </div>
+                    <div class="seekBar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="controlAndInfo">
+                        <div class="songInfo"></div>
+                        <div class="songButtons justify-center gap-15px">
+                            <i id="previous" class="fa-solid fa-backward"></i>
+                            <i id="play" class="fa-solid fa-play"></i>
+                            <i id="next" class="fa-solid fa-forward"></i>
+                        </div>
+                        <div class="songTime">
+                            <span class="duration"></span>
+                            <span class="currentTime"></span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+
+</html>
